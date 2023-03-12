@@ -96,7 +96,14 @@ body {
   position: absolute;
   left: 20px;
   cursor: pointer;
-top: 0;
+  top: 0;
+}
+.loginTOP:hover{
+  background-color: #595959;
+   transform: translateX(10px);
+   border-radius: 5px;
+   transition: transform 400ms;
+   border-right: inset 5px #595959;
 }
 
 .loginTOP p{
@@ -110,6 +117,8 @@ top: 0;
   left: 93px;
 }
 /* navBerTop */
+
+
 
 #header {
   background-image: url(./header_bg_v2.jpg);
@@ -125,6 +134,12 @@ top: 0;
   height: auto;
   margin-top: 70px;
 }
+
+/* search */
+.search {
+  display: inline;
+}
+
 
 /* header */
 
