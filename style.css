@@ -61,11 +61,27 @@ cursor: pointer;
 }
 
 /* header */
+/* navBerTop */
 .navBerTop{
-    top: 0;
-    background: #232323;
-    color: #fff;
+  top: 0;
+  background: #232323;
+  color: #fff;
 }
+
+.data{
+  font-size: 0.875rem;
+  padding-right: 5px;
+}
+.weather{
+  
+}
+.weatherC {
+  position: relative;
+  right: 2px;
+}
+/* navBerTop */
+
+
 #header {
     background-image: url(./header_bg_v2.jpg);
     background-repeat: no-repeat;

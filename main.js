@@ -44,7 +44,7 @@ api.onreadystatechange = function () {
       divpostTop.className = "col-6 col-md-4 divTop";
     }
 
-    console.log(JSapi);
+    // console.log(JSapi);
   }
 };
 
@@ -53,9 +53,58 @@ api.onreadystatechange = function () {
 // days arabs
 let data = document.querySelector(".data");
 
-const days = ["الاحد", "الاثنين", "الثالث", "الاربعاء", "الخميس", "الجمعة", "السبت"];
+const days = [
+  "الاحد",
+  "الاثنين",
+  "الثالث",
+  "الاربعاء",
+  "الخميس",
+  "الجمعة",
+  "السبت",
+];
+const months = [
+  "يناير",
+  "فبراير",
+  "مارس",
+  "أبريل",
+  "مايو",
+  "يونيو",
+  "يوليو",
+  "أغسطس",
+  "سبتمبر",
+  "اكتوبر",
+  "نوفمبر",
+  "ديسمبر",
+];
 
-let dd = new Date()
-let d = document.createTextNode(days[dd.getDay()])
+let dd = new Date();
+let d = document.createTextNode(
+  `${days[dd.getDay()]}  ${dd.getMonth() + 1} ${
+    months[dd.getMonth()]
+  } ${dd.getFullYear()}`
+);
 data.append(d);
+
+// months arabs
+
+// weather
+let apiWether = new XMLHttpRequest();
+apiWether.open(
+  "GET",
+  "http://api.weatherapi.com/v1/current.json?key=c96b3c6a2a9b46bd9dd23932231203&q=cairo&aqi=no"
+);
+apiWether.send();
+console.log(apiWether);
+apiWether.onreadystatechange = function () {
+  if ((this.status === 200) & (this.readyState === 4)) {
+    let jsapiWether = JSON.parse(this.responseText);
+    console.log(jsapiWether);
+
+    let weatherC = document.createTextNode(jsapiWether.current.feelslike_c);
+    let weather = document.querySelector(".weather");
+    weather.append(weatherC)
+    let iconWeather = document.createTextNode(jsapiWether.current.feelslike_c)
+  }
+};
+
 // data nav bar top
