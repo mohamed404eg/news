@@ -2,8 +2,7 @@ body {
   direction: rtl;
   margin: 0;
   padding: 0;
-  font-family: 'Cairo', sans-serif;
- 
+  font-family: "Cairo", sans-serif;
 }
 
 .div {
@@ -21,14 +20,12 @@ body {
   border-radius: 5px;
   border: 1px solid rgba(54, 57, 60, 0.5);
   box-shadow: 0 4px 8px rgb(81 85 88 / 20%);
-cursor: pointer;
-
+  cursor: pointer;
 }
-.divTop:hover{
-    transform: translateY(5px);
-    transition: ease 400ms;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-
+.divTop:hover {
+  transform: translateY(5px);
+  transition: ease 400ms;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .h3Top {
   position: relative;
@@ -41,111 +38,138 @@ cursor: pointer;
   height: 200px;
   width: 300px;
   border-radius: 5px;
-  object-fit:fill;
+  object-fit: fill;
 }
-.imgpost:hover{
+.imgpost:hover {
   opacity: 0.9;
   transition: ease 400ms;
-
 }
 
 .categories {
-    position: relative;
-    top: -200px;
-   color: #fff;
-   background-color: #AC0000;
-   display: inline-block;
-   width: 45px;
-   border-radius: 5px 0 0 5px;
-   font-size: 13px;
+  position: relative;
+  top: -200px;
+  color: #fff;
+  background-color: #ac0000;
+  display: inline-block;
+  width: 45px;
+  border-radius: 5px 0 0 5px;
+  font-size: 13px;
 }
 
 /* header */
 /* navBerTop */
-.navBerTop{
+.navBerTop {
   top: 0;
   background: #232323;
   color: #fff;
+  display: flex;
+  height: 34px;
+  align-items:center;
 }
 
-.data{
+.data {
   font-size: 0.875rem;
   padding-right: 5px;
 }
-.weather{
-  
+.weather {
+  cursor: pointer;
+  transition: ease 400ms;
+}
+.weather:hover::before {
+  content: "القاهرة";
+  width: 20px;
+  height: 30px;
+  transition: ease 400ms;
 }
 .weatherC {
   position: relative;
   right: 2px;
 }
-/* navBerTop */
-
-
-#header {
-    background-image: url(./header_bg_v2.jpg);
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-    height: 166px;
+.weatherIcon {
+  width: 30px;
+  height: 30px;
+  position: relative;
+  bottom: 0;
+}
+/* loginTOP */
+.loginTOP{
+  position: absolute;
+  left: 20px;
+  cursor: pointer;
+top: 0;
 }
 
-.logo{
-    max-width: 250px;
-    min-width: 230px;
-    height: auto;
-    margin-top: 70px;
+.loginTOP p{
+  display: inline;
+    font-size: 14px;
+    font-weight: 600;
+}
+.loginTOP img {
+  position: absolute;
+  top: 5px;
+  left: 93px;
+}
+/* navBerTop */
+
+#header {
+  background-image: url(./header_bg_v2.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  height: 166px;
+}
+
+.logo {
+  max-width: 250px;
+  min-width: 230px;
+  height: auto;
+  margin-top: 70px;
 }
 
 /* header */
 
-
-
-
-@media screen and (max-width:1024px) {
-    .div {
-        display: flex;
-        flex-wrap: wrap;
-        margin-top: 20px;
-        margin-left: 3%;
-        margin-right:3%;
-        justify-content: center;
-        gap: 10px;
-      }
+@media screen and (max-width: 1024px) {
+  .div {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    margin-left: 3%;
+    margin-right: 3%;
+    justify-content: center;
+    gap: 10px;
+  }
 }
 
-@media screen and (max-width:900px) {
-    .div {
-        display: flex;
-        flex-wrap: wrap;
-        margin-top: 20px;
-        margin-left: 2%;
-        margin-right:2%;
-        justify-content: center;
-        gap: 10px;
-      }
-
-    
+@media screen and (max-width: 900px) {
+  .div {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    margin-left: 2%;
+    margin-right: 2%;
+    justify-content: center;
+    gap: 10px;
+  }
 }
-@media screen and (max-width:600px) {
-    .div {
-        display: flex;
-        flex-wrap: wrap;
-        margin-top: 20px;
-        margin-left: 1%;
-        margin-right:1%;
-        justify-content: center;
-        gap: 10px;
-      }
+@media screen and (max-width: 600px) {
+  .div {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    margin-left: 1%;
+    margin-right: 1%;
+    justify-content: center;
+    gap: 10px;
+  }
 }
-@media screen and (max-width:320px) {
-    .div {
-        display: flex;
-        flex-wrap: wrap;
-        margin-top: 20px;
-        margin-left: 1%;
-        margin-right: 1%;
-        justify-content: center;
-        gap: 10px;
-      }
+@media screen and (max-width: 320px) {
+  .div {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    margin-left: 1%;
+    margin-right: 1%;
+    justify-content: center;
+    gap: 10px;
+  }
 }

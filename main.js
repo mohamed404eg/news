@@ -100,10 +100,13 @@ apiWether.onreadystatechange = function () {
     let jsapiWether = JSON.parse(this.responseText);
     console.log(jsapiWether);
 
-    let weatherC = document.createTextNode(jsapiWether.current.feelslike_c);
+    let weatherC = document.createTextNode(`${jsapiWether.current.feelslike_c}c`);
     let weather = document.querySelector(".weather");
     weather.append(weatherC)
-    let iconWeather = document.createTextNode(jsapiWether.current.feelslike_c)
+
+    // weatherIcon
+    let weatherIcon = document.querySelector(".weatherIcon")
+    weatherIcon.setAttribute("src", `${jsapiWether.current.condition.icon}`)
   }
 };
 
