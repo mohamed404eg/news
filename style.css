@@ -64,7 +64,7 @@ body {
   color: #fff;
   display: flex;
   height: 34px;
-  align-items:center;
+  align-items: center;
 }
 
 .data {
@@ -92,24 +92,24 @@ body {
   bottom: 0;
 }
 /* loginTOP */
-.loginTOP{
+.loginTOP {
   position: absolute;
   left: 20px;
   cursor: pointer;
   top: 0;
 }
-.loginTOP:hover{
+.loginTOP:hover {
   background-color: #595959;
-   transform: translateX(10px);
-   border-radius: 5px;
-   transition: transform 400ms;
-   border-right: inset 5px #595959;
+  transform: translateX(10px);
+  border-radius: 5px;
+  transition: transform 400ms;
+  border-right: inset 5px #595959;
 }
 
-.loginTOP p{
+.loginTOP p {
   display: inline;
-    font-size: 14px;
-    font-weight: 600;
+  font-size: 14px;
+  font-weight: 600;
 }
 .loginTOP img {
   position: absolute;
@@ -118,14 +118,16 @@ body {
 }
 /* navBerTop */
 
-
-
 #header {
   background-image: url(./header_bg_v2.jpg);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
   height: 166px;
+}
+.logoDIV {
+  top: -28px;
+  position: relative;
 }
 
 .logo {
@@ -137,10 +139,188 @@ body {
 
 /* search */
 .search {
+  position: absolute;
   display: inline;
+  height: 20px;
+  margin-top: 70px;
+  left: 30px;
+}
+
+.form-search {
+  display: flex;
+  height: 35px;
+  box-shadow: 0 1.5px 3px 2px rgba(0, 35, 64, 0.1);
+  padding: 0 5px 0 5px;
+  background-color: #fff;
+}
+
+.form-search input {
+  border: none;
+  padding: 5px 7px 5px 7px;
+  font-size: 14px;
+}
+.form-search input:focus {
+  outline-width: 0;
+}
+
+.form-search img {
+  background-color: #fff;
+  cursor: pointer;
+  width: 22px;
+  height: auto;
+  fill: rgba(41, 38, 39, 0.38);
+}
+/* search */
+
+/* list */
+.listFlex {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  color: #000000;
+  font-size:20px;
+  font-family: 'Lalezar', cursive;
+  font-weight: 400;
+  cursor: pointer;
+  margin-right: 4px;
+
+}
+
+.list{
+  margin-right:20px;
+
+}
+
+.list:hover{
+  border-bottom: solid 5px #BE2F21;
+
+}
+.climate_change{
+  width: 70px;
+
+}
+
+.list:nth-child(1){
+
+  border-bottom: solid 5px #BE2F21;
+
+}
+
+/* sab Menu 1 */
+.Dlist {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  opacity: 0;
+  background-color:#fff ;
+  width: 200px;
+  margin-top: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  transition: ease 200ms;
+  
+}
+.Alist {
+  padding-top: 10px;
+  border-bottom: 1px solid #E4E4E4;  text-decoration: none;
+  color: #000000;
+  padding-right: 10px;
+}
+.Alist:hover {
+  border-bottom: solid 5px #BE2F21;
+  
+}
+
+.list:nth-child(2):hover > .Dlist{
+  opacity: 1;
+  
 }
 
 
+/* sab Menu 2 */
+.Dlist2 {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  opacity: 0;
+  background-color:#fff ;
+  width: 200px;
+  margin-top: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  transition: ease 200ms;
+  
+}
+.Alist2 {
+  padding-top: 10px;
+  border-bottom: 1px solid #E4E4E4;  text-decoration: none;
+  color: #000000;
+  padding-right: 10px;
+}
+.Alist2:hover {
+  border-bottom: solid 5px #BE2F21;
+  
+}
+
+.list:nth-child(3):hover > .Dlist2{
+  opacity: 1;
+  
+}
+/* sab Menu 3 */
+.Dlist3 {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  opacity: 0;
+  background-color:#fff ;
+  width: 200px;
+  margin-top: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  transition: ease 200ms;
+  
+}
+.Alist3 {
+  padding-top: 10px;
+  border-bottom: 1px solid #E4E4E4;  text-decoration: none;
+  color: #000000;
+  padding-right: 10px;
+}
+.Alist3:hover {
+  border-bottom: solid 5px #BE2F21;
+  
+}
+
+.list:nth-child(6):hover > .Dlist3{
+  opacity: 1;
+  
+}
+/* sab Menu 4 */
+.Dlist4 {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  opacity: 0;
+  background-color:#fff ;
+  width: 200px;
+  margin-top: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  transition: ease 200ms;
+  z-index: 1;
+}
+.Alist4 {
+  padding-top: 10px;
+  border-bottom: 1px solid #E4E4E4;  text-decoration: none;
+  color: #000000;
+  padding-right: 10px;
+}
+.Alist4:hover {
+  border-bottom: solid 5px #BE2F21;
+  
+}
+
+.list:nth-child(7):hover > .Dlist4{
+  opacity: 1;
+
+  
+}
 /* header */
 
 @media screen and (max-width: 1024px) {
