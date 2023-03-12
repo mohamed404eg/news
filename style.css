@@ -183,6 +183,9 @@ body {
   font-weight: 400;
   cursor: pointer;
   margin-right: 4px;
+  position: absolute;
+  bottom: 44px;
+
 
 }
 
@@ -310,17 +313,36 @@ body {
   border-bottom: 1px solid #E4E4E4;  text-decoration: none;
   color: #000000;
   padding-right: 10px;
+  display: none;
+
 }
 .Alist4:hover {
   border-bottom: solid 5px #BE2F21;
   
 }
 
-.list:nth-child(7):hover > .Dlist4{
+.list:nth-child(7):hover > .Dlist4  {
   opacity: 1;
-
-  
+ 
 }
+
+
+/* list Left */
+.listLeft {
+  position: relative;
+margin-right: 20px;
+margin-bottom: 10px;
+}
+.listLeftItms{
+  display: flex;
+  flex-direction: column;
+}
+.business_web_menu_desktop{
+  width: 90px;
+    height: 40px;
+}
+
+
 /* header */
 
 @media screen and (max-width: 1024px) {

@@ -100,14 +100,37 @@ apiWether.onreadystatechange = function () {
     let jsapiWether = JSON.parse(this.responseText);
     console.log(jsapiWether);
 
-    let weatherC = document.createTextNode(`${jsapiWether.current.feelslike_c}c`);
+    let weatherC = document.createTextNode(
+      `${jsapiWether.current.feelslike_c}c`
+    );
     let weather = document.querySelector(".weather");
-    weather.append(weatherC)
+    weather.append(weatherC);
 
     // weatherIcon
-    let weatherIcon = document.querySelector(".weatherIcon")
-    weatherIcon.setAttribute("src", `${jsapiWether.current.condition.icon}`)
+    let weatherIcon = document.querySelector(".weatherIcon");
+    weatherIcon.setAttribute("src", `${jsapiWether.current.condition.icon}`);
   }
 };
 
 // data nav bar top
+
+/* sab Menu 4 */
+let list7 = document.querySelector(".list:nth-child(7)");
+
+list7.addEventListener("mousemove", () => {
+  let Alist4 = document.querySelectorAll(".Alist4");
+  for (let i = 0; i < Alist4.length; i++) {
+    Alist4[i].style.display = "block";
+  }
+});
+
+let sectoin1 = document.querySelector("#sectoin1");
+
+console.log(sectoin1);
+
+sectoin1.addEventListener("mousemove", () => {
+  let Alist4 = document.querySelectorAll(".Alist4");
+  for (let i = 0; i < Alist4.length; i++) {
+    Alist4[i].style.display = "none";
+  }
+}); /* sab Menu 4 */
