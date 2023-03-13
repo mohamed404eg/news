@@ -94,11 +94,11 @@ apiWether.open(
   "http://api.weatherapi.com/v1/current.json?key=c96b3c6a2a9b46bd9dd23932231203&q=cairo&aqi=no"
 );
 apiWether.send();
-console.log(apiWether);
+// console.log(apiWether);
 apiWether.onreadystatechange = function () {
   if ((this.status === 200) & (this.readyState === 4)) {
     let jsapiWether = JSON.parse(this.responseText);
-    console.log(jsapiWether);
+    // console.log(jsapiWether);
 
     let weatherC = document.createTextNode(
       `${jsapiWether.current.feelslike_c}c`
@@ -126,7 +126,7 @@ list7.addEventListener("mousemove", () => {
 
 let sectoin1 = document.querySelector("#sectoin1");
 
-console.log(sectoin1);
+// console.log(sectoin1);
 
 sectoin1.addEventListener("mousemove", () => {
   let Alist4 = document.querySelectorAll(".Alist4");
@@ -134,3 +134,112 @@ sectoin1.addEventListener("mousemove", () => {
     Alist4[i].style.display = "none";
   }
 }); /* sab Menu 4 */
+
+
+
+
+// sectoin-lastNews
+let lastNews = new XMLHttpRequest();
+
+lastNews.open("GET", "https://api-news.apkama.com/wp-json/wp/v2/posts?offset=7");
+
+lastNews.send();
+
+lastNews.onreadystatechange = function () {
+  if (this.status == 200 && this.readyState === 4) {
+    let JSlastNews = JSON.parse(this.responseText);
+
+    console.log(JSlastNews)
+    
+    let sectoin_lastNews = document.querySelector(".lastNews");
+    for (let i = 0; i < 6; i++) {
+      // creat
+      let divpostTop = document.createElement("div");
+      let h3 = document.createElement("h3");
+      let h3Text = document.createTextNode(JSlastNews[i].title.rendered);
+      h3.append(h3Text);
+      h3.className = "h3Top";
+
+      // img
+      let img = document.createElement("img");
+      img.setAttribute("src", `${JSlastNews[i].better_featured_image.source_url}`);
+      divpostTop.append(img);
+      img.className = "imgpostLastNews";
+
+      // img
+
+      // categories
+      let categories = JSlastNews[i].x_categories;
+      let creatC = document.createElement("span");
+      creatC.className = "categoriesLastNews";
+      creatC.innerText = categories;
+      divpostTop.append(creatC);
+
+      // categories
+
+      // append
+
+      sectoin_lastNews.appendChild(divpostTop);
+      divpostTop.append(h3);
+
+      // class name
+      divpostTop.className = "lastNewsDIV";
+    }
+
+    // console.log(JSapi);
+  }
+};
+
+
+// last News Left
+
+let lastNewsLeft = new XMLHttpRequest();
+
+lastNewsLeft.open("GET", "https://api-news.apkama.com/wp-json/wp/v2/posts?offset=7");
+
+lastNewsLeft.send();
+
+lastNewsLeft.onreadystatechange = function () {
+  if (this.status == 200 && this.readyState === 4) {
+    let JSlastNews = JSON.parse(this.responseText);
+
+    console.log(JSlastNews)
+    
+    let lastNewsLeft = document.querySelector(".lastNewsLeft");
+    for (let i = 7; i < 10; i++) {
+      // creat
+      let divpostTop = document.createElement("div");
+      let h3 = document.createElement("h3");
+      let h3Text = document.createTextNode(JSlastNews[i].title.rendered);
+      h3.append(h3Text);
+      h3.className = "h3TopLeft";
+
+      // img
+      let img = document.createElement("img");
+      img.setAttribute("src", `${JSlastNews[i].better_featured_image.source_url}`);
+      divpostTop.append(img);
+      img.className = "imgpostLastNewsLeft";
+
+      // img
+
+      // categories
+      let categories = JSlastNews[i].x_categories;
+      let creatC = document.createElement("span");
+      creatC.className = "categoriesLastNewsLeft";
+      creatC.innerText = categories;
+      divpostTop.append(creatC);
+
+      // categories
+
+      // append
+
+      lastNewsLeft.appendChild(divpostTop);
+      divpostTop.append(h3);
+
+      // class name
+      divpostTop.className = "lastNewsDIVLeft";
+    }
+
+    // console.log(JSapi);
+  }
+};
