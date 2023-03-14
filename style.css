@@ -5,6 +5,12 @@ body {
   font-family: "Cairo", sans-serif;
 }
 
+.container{
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
 .div {
   display: flex;
   flex-wrap: wrap;
@@ -68,6 +74,14 @@ body {
   align-items: center;
 }
 
+.navBerTopFlex{
+  display: flex;
+  justify-content: space-between;
+}
+.weatherFlex {
+  display: flex;
+  align-items: center;
+}
 .data {
   font-size: 0.875rem;
   padding-right: 5px;
@@ -94,15 +108,17 @@ body {
 }
 /* loginTOP */
 .loginTOP {
-  position: absolute;
-  left: 20px;
+  display: flex;
+  align-items: center;
   cursor: pointer;
-  top: 0;
+  height: 34px;
+  transition: transform 400ms;
+
 }
 .loginTOP:hover {
   background-color: #595959;
   transform: translateX(10px);
-  border-radius: 5px;
+  padding-left: 10px;
   transition: transform 400ms;
   border-right: inset 5px #595959;
 }
@@ -113,9 +129,8 @@ body {
   font-weight: 600;
 }
 .loginTOP img {
-  position: absolute;
-  top: 5px;
-  left: 93px;
+padding-left: 4px;
+
 }
 /* navBerTop */
 
@@ -126,17 +141,34 @@ body {
   background-size: cover;
   height: 166px;
 }
+
+
+.header {
+  height: 166px;
+}
+
+.headerTop{
+  display: flex;
+  justify-content: space-between;
+  padding-top: 35px;
+  padding-bottom: 30px;
+}
 .logoDIV {
-  top: -28px;
-  position: relative;
-  display: inline;
+ 
 }
 
 .logo {
   max-width: 250px;
   min-width: 230px;
   height: auto;
-  margin-top: 70px;
+
+}
+
+
+
+.logo a{
+  position: relative;
+  margin-left: auto;
 }
 
 /* search */
@@ -150,10 +182,17 @@ body {
 
 .form-search {
   display: flex;
+  position: relative;
+  margin-right: auto;
+  align-self: flex-start;
   height: 35px;
   box-shadow: 0 1.5px 3px 2px rgba(0, 35, 64, 0.1);
   padding: 0 5px 0 5px;
   background-color: #fff;
+  /* left: 0; */
+  align-content: flex-start;
+  width: 30px;
+  /* left: 5px; */
 }
 
 .form-search input {
@@ -184,10 +223,10 @@ body {
   font-family: "Lalezar", cursive;
   font-weight: 400;
   cursor: pointer;
-  margin-right: 4px;
-
-  position: relative;
-  bottom: 11px;
+  /* margin-right: 4px; */
+  /* position: relative; */
+  /* bottom: 11px; */
+  margin-top: 22px;
 }
 
 .list {
@@ -203,7 +242,9 @@ body {
 
 .list:nth-child(1) {
   border-bottom: solid 5px #be2f21;
+  margin-right: 0;
 }
+
 
 /* sab Menu 1 */
 .Dlist {
@@ -582,11 +623,60 @@ body {
 /* BUSINESS WINDOW */
 #BUSINESS_WINDOW {
   height: 411px;
-background-color: #2F71C1;
-margin-bottom: 400px;
+  background-color: #2F71C1;
+  margin-bottom: 400px;
 }
 
-@media screen and (max-width: 1024px) {
+
+/* Small 320 */
+@media screen and (min-width: 320px) {
+  .div {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    margin-left: 1%;
+    margin-right: 1%;
+    justify-content: center;
+    gap: 10px;
+  }
+}
+
+
+/* Small */
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+  .div {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    margin-left: 1%;
+    margin-right: 1%;
+    justify-content: center;
+    gap: 10px;
+  }
+}
+/* Medium */
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+  .div {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    margin-left: 2%;
+    margin-right: 2%;
+    justify-content: center;
+    gap: 10px;
+  }
+}
+/* Large */
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
   .div {
     display: flex;
     flex-wrap: wrap;
@@ -598,36 +688,6 @@ margin-bottom: 400px;
   }
 }
 
-@media screen and (max-width: 900px) {
-  .div {
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: 20px;
-    margin-left: 2%;
-    margin-right: 2%;
-    justify-content: center;
-    gap: 10px;
-  }
-}
-@media screen and (max-width: 600px) {
-  .div {
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: 20px;
-    margin-left: 1%;
-    margin-right: 1%;
-    justify-content: center;
-    gap: 10px;
-  }
-}
-@media screen and (max-width: 320px) {
-  .div {
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: 20px;
-    margin-left: 1%;
-    margin-right: 1%;
-    justify-content: center;
-    gap: 10px;
-  }
-}
+
+
+
