@@ -228,10 +228,23 @@ padding-left: 4px;
 
 .list {
   margin-right: 20px;
+  position: relative;
 }
+.list::after {
+  content: "";
+  position: absolute;
+  height: 5px;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  transform: scaleX(0);
+  transition: ease .25s;
+  transform-origin: bottom right;
+  background-color: #be2f21;
 
-.list:hover {
-  border-bottom: solid 5px #be2f21;
+}
+.list:hover::after {
+  transform: scaleX(1);
 }
 .climate_change {
   width: 70px;
@@ -612,12 +625,89 @@ flex-direction: column;
 }
 
 
-/* BUSINESS WINDOW */
+/* BUSINESS WINDOW start */
 #BUSINESS_WINDOW {
-  height: 411px;
+  height: auto;
   background-color: #2F71C1;
   margin-bottom: 400px;
+  margin-top: 50px;
 }
+
+
+.BUSINESSh2 {
+  font-family: HelveticaNeueBold,"Times New Roman";
+  font-size: 35px;
+  padding-top: 20px;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+}
+
+
+.BUSINESSh2::before {
+  content: " ";
+  height: 40px;
+  width: 2px;
+  position: relative;
+  display: inline-block;
+  top: 0;
+  background-color: #fff;
+}
+
+.BUSINESSh2Img{
+  height: 30px;
+}
+
+/* post BUSINESS */
+.BusinessPostDiv{
+  display: flex;
+  flex-direction: row;
+  flex-basis: auto;
+  column-gap: 10px;
+  cursor: pointer;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+}
+
+.BusinessPostImg{
+  max-width: 230px;
+  clip-path: polygon(100% 0, 100% 100%, 10% 100%, 0 85%, 0 0);
+  display: block
+}
+.BusinessPostC{
+  color: #fff;
+  font-size: 14px;
+  padding-top: 0;
+}
+.BusinessPostH3{
+  font-family: HelveticaNeueBold,"Times New Roman";
+  color: #FFF;
+  font-size: 22px;
+  max-width: 230px;
+  margin-top: 0;
+  transition: ease 400ms;
+  position: relative;
+  
+}
+.BusinessPostH3::after {
+  content: "";
+  background-color: #fff;
+  position: absolute;
+  height: 4px;
+  width: 100%;
+bottom: -2px;
+left: 0;
+transition: ease .25s;
+transform: scaleX(0);
+transform-origin: bottom right;
+}
+.BusinessPostH3:hover::after{
+  transform: scaleX(1);
+  transform-origin: bottom left;
+
+}
+/* BUSINESS WINDOW end*/
 
 
 /* Small 320 */
