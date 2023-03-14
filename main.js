@@ -517,3 +517,57 @@ function itm4POST() {
 itm4POST();
 
 //  itm3POST e
+
+//  newIMG s
+function newIMG() {
+  fetch("https://api-news.apkama.com/wp-json/wp/v2/posts?offset=25")
+    .then((rsepons) => {
+      return rsepons.json();
+    })
+    .then((BusinessPost) => {
+      // add to
+      let itm4POST = document.querySelector("#newIMG");
+      for (let i = 0; i < 4; i++) {
+        // creat
+        let divpostTop = document.createElement("div");
+        let h3 = document.createElement("h3");
+        let h3Text = document.createTextNode(BusinessPost[i].title.rendered);
+        h3.append(h3Text);
+        h3.className = "itm1H3";
+
+        // img
+        let img = document.createElement("img");
+        img.setAttribute(
+          "src",
+          `${BusinessPost[i].better_featured_image.source_url}`
+        );
+        divpostTop.append(img);
+        img.className = "itm1Img";
+
+        // img
+
+        // categories
+        let categories = BusinessPost[i].x_categories;
+        let creatC = document.createElement("span");
+        creatC.className = "itm1C";
+        creatC.innerText = categories;
+        divpostTop.append(creatC);
+
+        // categories
+
+        // append
+
+        divpostTop.append(h3);
+        itm4POST.appendChild(divpostTop);
+
+        // class name
+        divpostTop.className = "itm1POST-DIV";
+      }
+      // add to
+    })
+    .catch(() => console.log(console.error("is error")));
+}
+
+newIMG();
+
+//  itm3POST e
