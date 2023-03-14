@@ -5,6 +5,9 @@ body {
   font-family: "Cairo", sans-serif;
 }
 
+:root{
+  --borderH2Right:#AC0000;
+}
 .container {
   padding-right: 15px;
   padding-left: 15px;
@@ -614,8 +617,8 @@ body {
 #BUSINESS_WINDOW {
   height: auto;
   background-color: #2f71c1;
-  margin-bottom: 400px;
   margin-top: 50px;
+  margin-bottom: 20px;
 }
 
 .BUSINESSh2 {
@@ -688,6 +691,46 @@ body {
   transform-origin: bottom left;
 }
 /* BUSINESS WINDOW end*/
+
+
+
+
+
+/* kawkabuna new time desktop s */
+.kawkabuna{
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/* kawkabuna new time desktop e */
+
+
+
+
+
+/* Infographic s */
+#Infographic{
+  margin-top: 20px;
+  background-color: #232323;
+  height: 600px;
+
+}
+.InfographicH2 {
+  color: #fff;
+ font-size: 40px; 
+ font-weight: 900;
+ padding-top: 10px;
+ border-right: solid 5px var(--borderH2Right);
+ border-radius: 10px;
+}
+
+/* Infographic e */
+
+
+
+
+
 
 /* Small 320 */
 @media screen and (min-width: 320px) {
