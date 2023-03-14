@@ -5,7 +5,7 @@ body {
   font-family: "Cairo", sans-serif;
 }
 
-.container{
+.container {
   padding-right: 15px;
   padding-left: 15px;
   margin-left: auto;
@@ -72,7 +72,7 @@ body {
   align-items: center;
 }
 
-.navBerTopFlex{
+.navBerTopFlex {
   display: flex;
   justify-content: space-between;
 }
@@ -111,7 +111,6 @@ body {
   cursor: pointer;
   height: 34px;
   transition: transform 400ms;
-
 }
 .loginTOP:hover {
   background-color: #595959;
@@ -127,8 +126,7 @@ body {
   font-weight: 600;
 }
 .loginTOP img {
-padding-left: 4px;
-
+  padding-left: 4px;
 }
 /* navBerTop */
 
@@ -140,31 +138,25 @@ padding-left: 4px;
   height: 166px;
 }
 
-
 .header {
   height: 166px;
 }
 
-.headerTop{
+.headerTop {
   display: flex;
   justify-content: space-between;
   padding-top: 35px;
-
 }
 .logoDIV {
- 
 }
 
 .logo {
   max-width: 250px;
   min-width: 230px;
   height: auto;
-
 }
 
-
-
-.logo a{
+.logo a {
   position: relative;
   margin-left: auto;
 }
@@ -238,10 +230,9 @@ padding-left: 4px;
   bottom: 0;
   left: 0;
   transform: scaleX(0);
-  transition: ease .25s;
+  transition: ease 0.25s;
   transform-origin: bottom right;
   background-color: #be2f21;
-
 }
 .list:hover::after {
   transform: scaleX(1);
@@ -254,7 +245,6 @@ padding-left: 4px;
   border-bottom: solid 5px #be2f21;
   margin-right: 0;
 }
-
 
 /* sab Menu 1 */
 .Dlist {
@@ -485,15 +475,14 @@ padding-left: 4px;
 
 /* sectoin-lastNews */
 #sectoin-lastNews {
- display: grid;
- grid-template-columns: 2fr 1fr;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
 }
 .lastNewsH1 {
   position: relative;
   border-right: solid 5px #ac0000;
   padding-right: 3px;
   cursor: pointer;
- 
 }
 
 .lastNewsH1::after {
@@ -512,20 +501,19 @@ padding-left: 4px;
   gap: 15px;
 }
 
-.lastNewsDIV{
-    height: 300px;
-    min-width: 300px; 
-    border-radius: 5px;
-    border: 1px solid rgba(54, 57, 60, 0.5);
-    box-shadow: 0 4px 8px rgb(81 85 88 / 20%);
-    cursor: pointer;
-  
+.lastNewsDIV {
+  height: 300px;
+  min-width: 300px;
+  border-radius: 5px;
+  border: 1px solid rgba(54, 57, 60, 0.5);
+  box-shadow: 0 4px 8px rgb(81 85 88 / 20%);
+  cursor: pointer;
 }
 .lastNewsDIV:hover {
   transform: translateY(5px);
   transition: ease 400ms;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  border-bottom:solid 5px #ac0000; ;
+  border-bottom: solid 5px #ac0000;
 }
 
 .imgpostLastNews {
@@ -547,10 +535,9 @@ padding-left: 4px;
   padding-right: 4px;
 }
 /* last News Slid Left */
-.lastNewsLeftDIV{
-display: flex;
-flex-direction: column;
-
+.lastNewsLeftDIV {
+  display: flex;
+  flex-direction: column;
 }
 .lastNewsSlidLeft-H2 {
   position: relative;
@@ -572,11 +559,10 @@ flex-direction: column;
 
 /* last News Left */
 .lastNewsLeft {
-  
-    padding-right: 3px;
-    padding-top: 65px;
-    cursor: pointer;
-    margin-top: -66px;
+  padding-right: 3px;
+  padding-top: 65px;
+  cursor: pointer;
+  margin-top: -66px;
 }
 .lastNewsDIVLeft {
   height: 96px;
@@ -624,25 +610,22 @@ flex-direction: column;
   font-size: 13px;
 }
 
-
 /* BUSINESS WINDOW start */
 #BUSINESS_WINDOW {
   height: auto;
-  background-color: #2F71C1;
+  background-color: #2f71c1;
   margin-bottom: 400px;
   margin-top: 50px;
 }
 
-
 .BUSINESSh2 {
-  font-family: HelveticaNeueBold,"Times New Roman";
+  font-family: HelveticaNeueBold, "Times New Roman";
   font-size: 35px;
   padding-top: 20px;
   color: #fff;
   cursor: pointer;
   display: inline-block;
 }
-
 
 .BUSINESSh2::before {
   content: " ";
@@ -654,12 +637,12 @@ flex-direction: column;
   background-color: #fff;
 }
 
-.BUSINESSh2Img{
+.BUSINESSh2Img {
   height: 30px;
 }
 
 /* post BUSINESS */
-.BusinessPostDiv{
+.BusinessPostDiv {
   display: flex;
   flex-direction: row;
   flex-basis: auto;
@@ -667,28 +650,26 @@ flex-direction: column;
   cursor: pointer;
   justify-content: space-between;
   flex-wrap: wrap;
-
 }
 
-.BusinessPostImg{
+.BusinessPostImg {
   max-width: 230px;
   clip-path: polygon(100% 0, 100% 100%, 10% 100%, 0 85%, 0 0);
-  display: block
+  display: block;
 }
-.BusinessPostC{
+.BusinessPostC {
   color: #fff;
   font-size: 14px;
   padding-top: 0;
 }
-.BusinessPostH3{
-  font-family: HelveticaNeueBold,"Times New Roman";
-  color: #FFF;
+.BusinessPostH3 {
+  font-family: HelveticaNeueBold, "Times New Roman";
+  color: #fff;
   font-size: 22px;
   max-width: 230px;
   margin-top: 0;
   transition: ease 400ms;
   position: relative;
-  
 }
 .BusinessPostH3::after {
   content: "";
@@ -696,19 +677,17 @@ flex-direction: column;
   position: absolute;
   height: 4px;
   width: 100%;
-bottom: -2px;
-left: 0;
-transition: ease .25s;
-transform: scaleX(0);
-transform-origin: bottom right;
+  bottom: -2px;
+  left: 0;
+  transition: ease 0.25s;
+  transform: scaleX(0);
+  transform-origin: bottom right;
 }
-.BusinessPostH3:hover::after{
+.BusinessPostH3:hover::after {
   transform: scaleX(1);
   transform-origin: bottom left;
-
 }
 /* BUSINESS WINDOW end*/
-
 
 /* Small 320 */
 @media screen and (min-width: 320px) {
@@ -720,7 +699,6 @@ transform-origin: bottom right;
     gap: 10px;
   }
 }
-
 
 /* Small */
 @media (min-width: 768px) {
@@ -768,14 +746,10 @@ transform-origin: bottom right;
     box-shadow: 0 4px 8px rgb(81 85 88 / 20%);
     cursor: pointer;
   }
-  .imgpost{
+  .imgpost {
     height: 200px;
     width: 380px;
     border-radius: 5px;
     object-fit: fill;
   }
 }
-
-
-
-
