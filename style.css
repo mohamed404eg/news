@@ -189,7 +189,6 @@ padding-left: 4px;
   background-color: #fff;
   /* left: 0; */
   align-content: flex-start;
-  width: 30px;
   /* left: 5px; */
 }
 
@@ -463,7 +462,7 @@ padding-left: 4px;
 /* banner */
 .banner {
   margin-top: 20px;
-  width: 100;
+  margin-bottom: 31px;
 }
 .banner img {
   display: block;
@@ -473,17 +472,15 @@ padding-left: 4px;
 
 /* sectoin-lastNews */
 #sectoin-lastNews {
-  height: 700px;
-  width: 100%;
+ display: grid;
+ grid-template-columns: 2fr 1fr;
 }
 .lastNewsH1 {
   position: relative;
   border-right: solid 5px #ac0000;
   padding-right: 3px;
-  padding-top: -10px;
   cursor: pointer;
-  display: block;
-  margin-right: 15%;
+ 
 }
 
 .lastNewsH1::after {
@@ -499,24 +496,23 @@ padding-left: 4px;
 .lastNews {
   display: flex;
   flex-wrap: wrap;
-  margin-right: 15%;
-  margin-left: 30%;
-  gap: 10px;
+  gap: 15px;
 }
 
-.lastNewsDIV {
-  height: 300px;
-  width: 300px;
-  border-radius: 5px;
-  border: 1px solid rgba(54, 57, 60, 0.5);
-  box-shadow: 0 4px 8px rgb(81 85 88 / 20%);
-  cursor: pointer;
-  flex-basis: 32%;
+.lastNewsDIV{
+    height: 300px;
+    min-width: 300px; 
+    border-radius: 5px;
+    border: 1px solid rgba(54, 57, 60, 0.5);
+    box-shadow: 0 4px 8px rgb(81 85 88 / 20%);
+    cursor: pointer;
+  
 }
 .lastNewsDIV:hover {
   transform: translateY(5px);
   transition: ease 400ms;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-bottom:solid 5px #ac0000; ;
 }
 
 .imgpostLastNews {
@@ -538,17 +534,16 @@ padding-left: 4px;
   padding-right: 4px;
 }
 /* last News Slid Left */
+.lastNewsLeftDIV{
+display: flex;
+flex-direction: column;
+
+}
 .lastNewsSlidLeft-H2 {
-  position: absolute;
+  position: relative;
   border-right: solid 5px #ac0000;
   padding-right: 3px;
-  padding-top: -10px;
   cursor: pointer;
-  display: block;
-  margin-right: 70%;
-  margin-top: -66px;
-  font-size: 22px;
-  font-weight: 900;
 }
 
 .lastNewsSlidLeft-H2::after {
@@ -564,18 +559,16 @@ padding-left: 4px;
 
 /* last News Left */
 .lastNewsLeft {
-  position: absolute;
-  padding-right: 3px;
-  padding-top: 65px;
-  cursor: pointer;
-  display: block;
-  margin-right: 70%;
-  margin-top: -66px;
+  
+    padding-right: 3px;
+    padding-top: 65px;
+    cursor: pointer;
+    margin-top: -66px;
 }
 .lastNewsDIVLeft {
   height: 96px;
   width: 315px;
-
+  border-radius: 5px;
   cursor: pointer;
   flex-basis: 32%;
   border-bottom: 1px solid rgba(54, 57, 60, 0.5);
@@ -594,6 +587,7 @@ padding-left: 4px;
   margin-top: auto;
   margin-bottom: auto;
 }
+
 .h3TopLeft {
   font-size: 14px;
   position: relative;
@@ -675,6 +669,20 @@ padding-left: 4px;
     margin-top: 20px;
     justify-content: center;
     gap: 10px;
+  }
+  .divTop {
+    height: 300px;
+    width: 380px;
+    border-radius: 5px;
+    border: 1px solid rgba(54, 57, 60, 0.5);
+    box-shadow: 0 4px 8px rgb(81 85 88 / 20%);
+    cursor: pointer;
+  }
+  .imgpost{
+    height: 200px;
+    width: 380px;
+    border-radius: 5px;
+    object-fit: fill;
   }
 }
 
