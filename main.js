@@ -91,7 +91,7 @@ data.append(d);
 let apiWether = new XMLHttpRequest();
 apiWether.open(
   "GET",
-  "http://api.weatherapi.com/v1/current.json?key=c96b3c6a2a9b46bd9dd23932231203&q=cairo&aqi=no"
+  "https://api.weatherapi.com/v1/current.json?key=c96b3c6a2a9b46bd9dd23932231203&q=cairo&aqi=no"
 );
 apiWether.send();
 // console.log(apiWether);
