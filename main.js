@@ -253,61 +253,267 @@ lastNewsLeft.onreadystatechange = function () {
 //  BUSINESS WINDOW start
 
 function setdateBusiness() {
-  fetch(
-    "https://api-news.apkama.com/wp-json/wp/v2/posts?offset=15"
-  ).then((rsepons) => {
-    return rsepons.json()
+  fetch("https://api-news.apkama.com/wp-json/wp/v2/posts?offset=15")
+    .then((rsepons) => {
+      return rsepons.json();
+    })
+    .then((BusinessPost) => {
+      // add to BusinessPost start
+      let BusinessInPost = document.querySelector(".BusinessPostDiv");
+      for (let i = 0; i < 4; i++) {
+        // creat
+        let divpostTop = document.createElement("div");
+        let h3 = document.createElement("h3");
+        let h3Text = document.createTextNode(BusinessPost[i].title.rendered);
+        h3.append(h3Text);
+        h3.className = "BusinessPostH3";
 
-  }).then((BusinessPost) => {
-    
+        // img
+        let img = document.createElement("img");
+        img.setAttribute(
+          "src",
+          `${BusinessPost[i].better_featured_image.source_url}`
+        );
+        divpostTop.append(img);
+        img.className = "BusinessPostImg";
 
-// add to BusinessPost start
-    let BusinessInPost = document.querySelector(".BusinessPostDiv");
-    for (let i = 0; i < 4; i++) {
-      // creat
-      let divpostTop = document.createElement("div");
-      let h3 = document.createElement("h3");
-      let h3Text = document.createTextNode(BusinessPost[i].title.rendered);
-      h3.append(h3Text);
-      h3.className = "BusinessPostH3";
-  
-      // img
-      let img = document.createElement("img");
-      img.setAttribute(
-        "src",
-        `${BusinessPost[i].better_featured_image.source_url}`
-      );
-      divpostTop.append(img);
-      img.className = "BusinessPostImg";
-  
-      // img
-  
-      // categories
-      let categories = BusinessPost[i].x_categories;
-      let creatC = document.createElement("span");
-      creatC.className = "BusinessPostC";
-      creatC.innerText = categories;
-      divpostTop.append(creatC);
-  
-      // categories
-  
-      // append
-  
-      BusinessInPost.appendChild(divpostTop);
-      divpostTop.append(h3);
-  
-      // class name
-      divpostTop.className = "BusinessPost";
-    }
-// add to BusinessPost end
+        // img
 
-  
-  } ).catch(()=>console.log(console.error("is error"))) }
+        // categories
+        let categories = BusinessPost[i].x_categories;
+        let creatC = document.createElement("span");
+        creatC.className = "BusinessPostC";
+        creatC.innerText = categories;
+        divpostTop.append(creatC);
 
- 
+        // categories
 
+        // append
+
+        BusinessInPost.appendChild(divpostTop);
+        divpostTop.append(h3);
+
+        // class name
+        divpostTop.className = "BusinessPost";
+      }
+      // add to BusinessPost end
+    })
+    .catch(() => console.log(console.error("is error")));
+}
 
 setdateBusiness();
 
+//  itm1POST s
+function setdateBusiness() {
+  fetch("https://api-news.apkama.com/wp-json/wp/v2/posts?offset=17")
+    .then((rsepons) => {
+      return rsepons.json();
+    })
+    .then((BusinessPost) => {
+      // add to
+      let BusinessInPost = document.querySelector(".itm1POST");
+      for (let i = 0; i < 4; i++) {
+        // creat
+        let divpostTop = document.createElement("div");
+        let h3 = document.createElement("h3");
+        let h3Text = document.createTextNode(BusinessPost[i].title.rendered);
+        h3.append(h3Text);
+        h3.className = "itm1H3";
+
+        // img
+        let img = document.createElement("img");
+        img.setAttribute(
+          "src",
+          `${BusinessPost[i].better_featured_image.source_url}`
+        );
+        divpostTop.append(img);
+        img.className = "itm1Img";
+
+        // img
+
+        // categories
+        let categories = BusinessPost[i].x_categories;
+        let creatC = document.createElement("span");
+        creatC.className = "itm1C";
+        creatC.innerText = categories;
+        divpostTop.append(creatC);
+
+        // categories
+
+        // append
+
+        BusinessInPost.appendChild(divpostTop);
+        divpostTop.append(h3);
+
+        // class name
+        divpostTop.className = "itm1POST-DIV";
+      }
+      // add to
+    })
+    .catch(() => console.log(console.error("is error")));
+}
+
+//  itm1POST e
+
+//  itm2POST s
+function itm2POST() {
+  fetch("https://api-news.apkama.com/wp-json/wp/v2/posts?offset=20")
+    .then((rsepons) => {
+      return rsepons.json();
+    })
+    .then((BusinessPost) => {
+      // add to
+      let itm2POST = document.querySelector(".itm2POST");
+      for (let i = 0; i < 4; i++) {
+        // creat
+        let divpostTop = document.createElement("div");
+        let h3 = document.createElement("h3");
+        let h3Text = document.createTextNode(BusinessPost[i].title.rendered);
+        h3.append(h3Text);
+        h3.className = "itm1H3";
+
+        // img
+        let img = document.createElement("img");
+        img.setAttribute(
+          "src",
+          `${BusinessPost[i].better_featured_image.source_url}`
+        );
+        divpostTop.append(img);
+        img.className = "itm1Img";
+
+        // img
+
+        // categories
+        let categories = BusinessPost[i].x_categories;
+        let creatC = document.createElement("span");
+        creatC.className = "itm1C";
+        creatC.innerText = categories;
+        divpostTop.append(creatC);
+
+        // categories
+
+        // append
+
+        divpostTop.append(h3);
+        itm2POST.appendChild(divpostTop);
+
+        // class name
+        divpostTop.className = "itm1POST-DIV";
+      }
+      // add to
+    })
+    .catch(() => console.log(console.error("is error")));
+}
+
+itm2POST();
+
+//  itm2POST e
 
 
+//  itm3POST s
+function itm3POST() {
+  fetch("https://api-news.apkama.com/wp-json/wp/v2/posts?offset=20")
+    .then((rsepons) => {
+      return rsepons.json();
+    })
+    .then((BusinessPost) => {
+      // add to
+      let itm3POST = document.querySelector(".itm3POST");
+      for (let i = 4; i < 8; i++) {
+        // creat
+        let divpostTop = document.createElement("div");
+        let h3 = document.createElement("h3");
+        let h3Text = document.createTextNode(BusinessPost[i].title.rendered);
+        h3.append(h3Text);
+        h3.className = "itm1H3";
+
+        // img
+        let img = document.createElement("img");
+        img.setAttribute(
+          "src",
+          `${BusinessPost[i].better_featured_image.source_url}`
+        );
+        divpostTop.append(img);
+        img.className = "itm1Img";
+
+        // img
+
+        // categories
+        let categories = BusinessPost[i].x_categories;
+        let creatC = document.createElement("span");
+        creatC.className = "itm1C";
+        creatC.innerText = categories;
+        divpostTop.append(creatC);
+
+        // categories
+
+        // append
+
+        divpostTop.append(h3);
+        itm3POST.appendChild(divpostTop);
+
+        // class name
+        divpostTop.className = "itm1POST-DIV";
+      }
+      // add to
+    })
+    .catch(() => console.log(console.error("is error")));
+}
+
+itm3POST();
+
+//  itm3POST e
+
+//  itm4POST s
+function itm4POST() {
+  fetch("https://api-news.apkama.com/wp-json/wp/v2/posts?offset=25")
+    .then((rsepons) => {
+      return rsepons.json();
+    })
+    .then((BusinessPost) => {
+      // add to
+      let itm4POST = document.querySelector(".itm4POST");
+      for (let i = 0; i < 4; i++) {
+        // creat
+        let divpostTop = document.createElement("div");
+        let h3 = document.createElement("h3");
+        let h3Text = document.createTextNode(BusinessPost[i].title.rendered);
+        h3.append(h3Text);
+        h3.className = "itm1H3";
+
+        // img
+        let img = document.createElement("img");
+        img.setAttribute(
+          "src",
+          `${BusinessPost[i].better_featured_image.source_url}`
+        );
+        divpostTop.append(img);
+        img.className = "itm1Img";
+
+        // img
+
+        // categories
+        let categories = BusinessPost[i].x_categories;
+        let creatC = document.createElement("span");
+        creatC.className = "itm1C";
+        creatC.innerText = categories;
+        divpostTop.append(creatC);
+
+        // categories
+
+        // append
+
+        divpostTop.append(h3);
+        itm4POST.appendChild(divpostTop);
+
+        // class name
+        divpostTop.className = "itm1POST-DIV";
+      }
+      // add to
+    })
+    .catch(() => console.log(console.error("is error")));
+}
+
+itm4POST();
+
+//  itm3POST e

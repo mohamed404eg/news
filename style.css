@@ -5,8 +5,8 @@ body {
   font-family: "Cairo", sans-serif;
 }
 
-:root{
-  --borderH2Right:#AC0000;
+:root {
+  --borderH2Right: #ac0000;
 }
 .container {
   padding-right: 15px;
@@ -692,40 +692,235 @@ body {
 }
 /* BUSINESS WINDOW end*/
 
-
-
-
-
 /* kawkabuna new time desktop s */
-.kawkabuna{
+.kawkabuna {
   display: block;
   margin-right: auto;
   margin-left: auto;
+  cursor: pointer;
 }
 
 /* kawkabuna new time desktop e */
 
-
-
-
-
 /* Infographic s */
-#Infographic{
+#Infographic {
   margin-top: 20px;
   background-color: #232323;
-  height: 600px;
-
 }
 .InfographicH2 {
   color: #fff;
- font-size: 40px; 
- font-weight: 900;
- padding-top: 10px;
- border-right: solid 5px var(--borderH2Right);
- border-radius: 10px;
+  font-size: 40px;
+  font-weight: 900;
+  padding-top: 10px;
+  border-right: solid 5px var(--borderH2Right);
+  border-radius: 10px;
+  cursor: pointer;
+}
+.Infographic {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  column-gap: 10px;
+}
+.info_Infographic {
+  width: auto;
+}
+.info_Infographic img {
+  min-width: 250px;
+  width: 100%;
+  object-fit: scale-down;
+  cursor: pointer;
+}
+/* Infographic e */
+
+/* multiple Category s */
+#multipleCategory {
+  display: grid;
+  grid-template-areas:
+    "MiddleEast world sport OpinionArticles"
+    "MiddleEast world sport OpinionArticles"
+    "MiddleEast world sport OpinionArticles"
+    "MiddleEast world sport OpinionArticles"
+    "MiddleEast world sport OpinionArticles";
+  margin-top: 20px;
+  background-image: radial-gradient(
+    circle,
+    #f5f8f8,
+    #f8fafa,
+    #fafbfc,
+    #fdfdfe,
+    #ffffff
+  );
+
+  column-gap: 20px;
 }
 
-/* Infographic e */
+.itm1 {
+  grid-area: MiddleEast;
+}
+.itm2 {
+  grid-area: world;
+
+  height: 300px;
+}
+.itm3 {
+  grid-area: sport;
+
+  height: 300px;
+}
+.itm4 {
+  grid-area: OpinionArticles;
+
+  height: 300px;
+}
+
+/* itm1 */
+
+.itm1H2 {
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+  padding-top: -5px;
+  border-right: solid 5px var(--borderH2Right);
+  padding-right: 3px;
+  color: #000;
+  position: relative;
+  line-height: 28px;
+  cursor: pointer;
+}
+.itm1H2::after {
+  content: " ";
+  background-image: url(./img/content_go_arrow.svg);
+  display: inline-block;
+  height: 35px;
+  width: 11px;
+  margin-right: 46px;
+  position: absolute;
+}
+
+.itm1POST-DIV {
+  height: 96px;
+  width: 315px;
+  border-radius: 5px;
+  cursor: pointer;
+  flex-basis: 32%;
+  border-bottom: 1px solid rgba(54, 57, 60, 0.5);
+  background-color: #ffffff;
+  margin-bottom: 20px;
+  transition: ease 400ms;
+  position: relative;
+  box-shadow: 0 1.5px 3px 0 rgba(0, 35, 64, 0.05);
+}
+.itm1POST-DIV::after {
+  content: "";
+  background-color: var(--borderH2Right);
+  position: absolute;
+  height: 4px;
+  width: 100%;
+  bottom: -2px;
+  left: 0;
+  transition: ease 0.25s;
+  transform: scaleX(0);
+  transform-origin: bottom right;
+}
+.itm1POST-DIV:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.itm1POST-DIV:nth-child(1) {
+  height: 180px;
+  width: 315px;
+  border-radius: 5px;
+  border-bottom: 1px solid rgba(54, 57, 60, 0.5);
+  cursor: pointer;
+}
+
+.itm1POST-DIV:nth-child(1) img {
+  height: 180px;
+  width: 100%;
+  border-radius: 5px;
+  object-fit: fill;
+}
+
+.itm1POST-DIV:nth-child(1) h3 {
+  color: #fff;
+  color: #fff;
+  padding-right: 14px;
+  background-color: #000000a1;
+  font-size: 19px;
+}
+
+.itm1C {
+  position: relative;
+  padding-right: 5px;
+  top: -89px;
+  margin-bottom: 20px;
+  margin-right: 114px;
+  color: #fff;
+  background-color: #ac0000;
+  display: inline-block;
+  width: 45px;
+  border-radius: 5px 0 0 5px;
+  font-size: 13px;
+  display: none;
+}
+.itm1Img {
+  height: 85px;
+  width: 114px;
+  object-fit: fill;
+  display: flex;
+  align-items: center;
+  padding-top: 5px;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.itm1H3 {
+  font-size: 14px;
+  position: relative;
+  color: black;
+  padding-right: 118px;
+  top: -92px;
+  max-width: 300px;
+}
+
+/* itm 2 POST */
+
+/* multiple Category e */
+
+
+/* signin s */
+#signin {
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.signin-bar {
+  height: 70px;
+  width: 100%;
+  background-color: #232323;
+}
+.signin-img{
+  width: 100%;
+}
+
+.signin-bar-img
+{
+  height: 50px;
+  width: 80px;
+  margin-right: auto;
+  margin-left: auto;
+  display: block;
+  position: relative;
+  top: -27px;
+  background-color: #252933;
+  border-radius: 50%;
+  border:solid 5px #E9EFF0;
+}
+/* signin e */
+
+
 
 
 
