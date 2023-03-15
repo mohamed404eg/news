@@ -527,13 +527,13 @@ function newIMG() {
     .then((BusinessPost) => {
       // add to
       let itm4POST = document.querySelector("#newIMG");
-      for (let i = 0; i < 4; i++) {
+      for (let i = 0; i < 5; i++) {
         // creat
         let divpostTop = document.createElement("div");
         let h3 = document.createElement("h3");
         let h3Text = document.createTextNode(BusinessPost[i].title.rendered);
         h3.append(h3Text);
-        h3.className = "itm1H3";
+        h3.className = "newIMGH3";
 
         // img
         let img = document.createElement("img");
@@ -561,7 +561,7 @@ function newIMG() {
         itm4POST.appendChild(divpostTop);
 
         // class name
-        divpostTop.className = "itm1POST-DIV";
+        divpostTop.className = "newIMG-DIV";
       }
       // add to
     })
@@ -570,4 +570,4 @@ function newIMG() {
 
 newIMG();
 
-//  itm3POST e
+//  newIMG e
