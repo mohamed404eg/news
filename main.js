@@ -290,21 +290,24 @@ function setdateBusiness() {
 
         // append
 
-        BusinessInPost.appendChild(divpostTop);
+        BusinessInPost.append(divpostTop);
         divpostTop.append(h3);
 
         // class name
         divpostTop.className = "BusinessPost";
       }
       // add to BusinessPost end
-    })
-    .catch(() => console.log(console.error("is error")));
+    }).catch(() => console.log(console.error("is error")));
 }
 
 setdateBusiness();
+//  BUSINESS WINDOW e
+
+
+
 
 //  itm1POST s
-function setdateBusiness() {
+function itm1POST() {
   fetch("https://api-news.apkama.com/wp-json/wp/v2/posts?offset=17")
     .then((rsepons) => {
       return rsepons.json();
@@ -352,7 +355,7 @@ function setdateBusiness() {
     })
     .catch(() => console.log(console.error("is error")));
 }
-
+itm1POST();
 //  itm1POST e
 
 //  itm2POST s
