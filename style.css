@@ -764,17 +764,17 @@ html {
 .itm2 {
   grid-area: world;
 
-  height: 300px;
+  
 }
 .itm3 {
   grid-area: sport;
 
-  height: 300px;
+
 }
 .itm4 {
   grid-area: OpinionArticles;
 
-  height: 300px;
+
 }
 
 /* itm1 */
@@ -1200,7 +1200,20 @@ html {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
+
+
 /* footer e */
+
+/* by  s*/
+.by {
+  text-align: center;
+  background-color: #ffffff;
+}
+.by a{
+  text-decoration: none;
+  color: #000;
+}
+/* by e*/
 
 /* Small 320 s */
 @media screen and (max-width: 500px) {
@@ -1455,6 +1468,86 @@ html {
   border-radius: 10px;
   cursor: pointer;
   padding-right: 2%;
+}
+
+
+/* multipleCategory */
+#multipleCategory{
+  padding-top: 30px;
+}
+.itm1H2 {
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+  padding-top: -5px;
+  border-right: solid 5px var(--borderH2Right);
+  padding-right: 3px;
+  color: #000;
+  position: relative;
+  line-height: 28px;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+#signin{
+  display: none;
+}
+
+.newIMGH3 {
+  font-size: 18px;
+  position: relative;
+  color: black;
+  padding-right: 118px;
+  top: -92px;
+  max-width: 300px;
+}
+
+
+
+/* footer */
+.footer-top-itmeOne {
+  display: flex;
+  flex-direction: column;
+  column-gap: 0;
+  padding-top: 10px;
+  font-size: 20px;
+  font-weight: 600;
+  width: 100%;
+}
+.footer-top-itmeOne span{
+  width: 100%;
+text-align: center;
+}
+.footer-top-itmeOne div {
+  text-align: center;
+}
+.footer-top-itmeTow {
+  display: flex;
+  column-gap: 20px;
+  transition: ease 400ms;
+  justify-content: center;
+  width: 100%;
+}
+
+.footerList {
+  text-align: center;
+}
+.footerList2 {
+  grid-area: footerList2;
+  height: 290px;
+  padding-top: 13px;
+}
+.footerList3 {
+  grid-area: footerList3;
+  height: 330px;
+  padding-top: 15px;
+}
+.footerList5 {
+  grid-area: footerList5;
+  height: 361px;
+  border-right: 1px solid;
+  border-color: rgba(35, 35, 35, 0.25);
+  box-shadow: 1px -1px 3px 0 rgba(0, 35, 64, 0.05);
 }
 }
 
