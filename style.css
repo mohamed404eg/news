@@ -1203,7 +1203,7 @@ html {
 /* footer e */
 
 /* Small 320 s */
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 500px) {
   .container {
     padding-right: 0;
     padding-left: 0;
