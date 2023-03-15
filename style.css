@@ -1249,7 +1249,11 @@ html {
     display: flex;
     align-items: center;
   }
-
+.social{
+  display: flex;
+  flex-wrap: nowrap;
+  column-gap: 5px;
+}
   .videoSpan-mobile-320px {
     width: 40px;
     height: 25px;
@@ -1299,6 +1303,10 @@ html {
     gap: 10px;
     width: 100%;
   }
+
+
+
+
 
   .listFlex {
     display: none;
@@ -1376,12 +1384,28 @@ html {
     cursor: pointer;
     width: 84%;
   }
+
+
+  /* lastNews */
+  .lastNews {
+    padding-top: 10px;
+  }
+  
   .imgpostLastNews {
     height: 200px;
-    width: 90%;
+    width: 100%;
     border-radius: 5px;
     object-fit: fill;
   }
+  .h3Top {
+    position: relative;
+    color: black;
+    padding-right: 5px;
+    top: -20px;
+    max-width: 300px;
+}
+
+
   .lastNewsDIV {
     height: 300px;
     min-width: 90%;
@@ -1390,7 +1414,48 @@ html {
     box-shadow: 0 4px 8px rgb(81 85 88 / 20%);
     cursor: pointer;
     width: 100%;
+   
   }
+  .lastNewsLeftDIV{
+     padding-top: 20px;
+  }
+
+
+  /* BUSINESS_WINDOW */
+  .BusinessPostImg {
+    max-width: 90%;
+    clip-path: polygon(100% 0, 100% 100%, 10% 100%, 0 85%, 0 0);
+    display: block;
+    margin-right: auto;
+    margin-left: auto;}
+    .BusinessPostC {
+      color: #fff;
+      font-size: 19px;
+      padding-top: 0;
+      margin-right: 5%;
+  }
+  .BusinessPostH3 {
+    font-family: HelveticaNeueBold, "Times New Roman";
+    color: #fff;
+    font-size: 22px;
+    max-width: 90%;
+    margin-top: 0;
+    transition: ease 400ms;
+    position: relative;
+    margin-right: 5%;
+    margin-bottom: 10px;
+}
+ /* Infographic  */
+ .InfographicH2 {
+  color: #fff;
+  font-size: 40px;
+  font-weight: 900;
+  padding-top: 10px;
+  border-right: solid 5px var(--borderH2Right);
+  border-radius: 10px;
+  cursor: pointer;
+  padding-right: 2%;
+}
 }
 
 /* Small 320 e */
