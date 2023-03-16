@@ -7,9 +7,9 @@
 }
 
 
-/* input::-webkit-search-cancel-button {
+input::-webkit-search-cancel-button {
     display: none;
-} */
+}
 
 html {
   scroll-behavior: smooth;
