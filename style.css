@@ -1328,7 +1328,13 @@ html {
   z-index: 2;
   top: 0;
 	overflow-y: scroll;
+  transform: translateX(100%);
+  transition: 400ms ease;
 }
+.NavMobileOPEN {
+  transform: translateX(0);
+}
+
 
 .NavMobileLogo{
   width: 100%;
@@ -1588,8 +1594,14 @@ justify-content: center;
   margin-top: 20px;
   display: flex;
   flex-direction: column;
-  flex-wrap: nowrap;}
+  flex-wrap: nowrap;
 
+}
+
+
+  .NavMobileListAll a {
+    color: #000000;
+  }
 .homeA {
   color: #AC0000 ;
   border-bottom: 1px solid #e8e8e8;
@@ -1598,13 +1610,14 @@ justify-content: center;
 /* this use all ul in js */
 .list1ul {
   display: none;
-  transition: 800ms ease ;
+  transition: 4s ease-in-out ;
   transform-origin: bottom;
 }
 .list1ulblock{
   display: block;
-  transition: 800ms ease ;
+  transition: 5s ease-in-out ;
   transform-origin: bottom;
+
 }
 
 /* this use all ul in js */
@@ -1639,10 +1652,34 @@ justify-content: center;
 }
 
 
+.listDiv {
+  margin-right: 20px;
+  position: relative;
+  border-top: 1px solid #e4e4e4;
+  padding: 14px 0;
+  cursor: pointer;
+}
 
 
+.climateImg {
+  width: 70px;
+}
 
 
+.listArrow{
+  width: 20px;
+  height: 16px;
+  fill: #000;
+  transform:rotate(270deg);
+  transition: ease 300ms;
+  
+}
+.listArrowTOP{
+  width: 20px;
+  height: 16px;
+  fill: #000;
+  transform:rotate(90deg);
+}
 
 
 

@@ -16,6 +16,7 @@
       href="https://fonts.googleapis.com/css2?family=Lalezar&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://www.skynewsarabia.com/asset/1643193804/6208CF2D73153C31B9E1C2B9BEBC0BD2/styles/sna-font/HelveticaNeueMEforSKYW21-Bd_web.woff2">
   </head>
   <body>
     <div class="navBerTop">
@@ -39,7 +40,7 @@
       <div class="container">
         <div class="header">
           <div class="headerTop">
-            <img class="ic_menu_black" src="./img/ic_menu_black_24px.svg" alt="">
+            <img class="ic_menu_black" src="./img/ic_menu_black_24px.svg" onclick="menu_close_Open()" alt="">
           
             <div class="LogoDiv">
               <a href=""
@@ -175,11 +176,11 @@
 <div class="NavMobileLogo">
 <div class="NavMobileLogoFlex">
 
-<img src="./img/ic_menu_close_black_24px.svg" alt="" class="menu_close">
+<img src="./img/ic_menu_close_black_24px.svg" alt="" onclick="menu_close_Open()" class="menu_close">
 <img src="./header_logo_color.png" class="NavMobileLogoImg" alt="">
 
 <div  class="NavMobileLogin">
-  <img src="./img/ic_account_circle_black_24px_menu.svg" alt="" />
+  <img src="./img/ic_account_circle_black_24px_menu.svg" alt=""   />
   <p> دخول </p>
 </div>
 </div>
@@ -250,13 +251,14 @@
 
 
 <div class="NavMobileListAll">
-  <a href="" class="homeA">  الرئيسية </a>
+  <a href="#" class="homeA">  الرئيسية </a>
 
   
 
   <ul class="listALL1">
   <li class="list1">
-     <a  class="li1news"> أخبار </a>
+     <a  onclick="Arrows(0);" href="#" class="li1news " > أخبار </a>
+     <img class="listArrow" src="./img/Arrow.png" alt="">
      <li>
        <ul class="list1ul">
  
@@ -277,32 +279,75 @@
 
 <ul class="listALL1">
   <li class="list1">
-     <a  class="li1news"> شرق أوسط </a>
+     <a href="#"  class="li1news" onclick="Arrows(1);"> شرق أوسط </a>
+     <img class="listArrow" src="./img/Arrow.png" alt="">
+
   <li>
        <ul class="list1ul">
       <li href="" class="Alist"> آخر الأخبار </li>
       <li href="" class="Alist"> من مصر </li>
       </ul>
   </li>
- 
-
-  
 </ul>
+
+
+
+<div class="listDiv">
+   <a href=""><img
+    src="./img/climate_change.svg"
+    alt=""
+    class="climateImg"
+  /></a>
+</div>
+
+
+
+<ul class="listALL1">
+  <li class="li1news"> <a href="#"> نافذة مغاربية  </a> </li>
+</ul>
+
 
 
 <ul class="listALL1">
   <li class="list1">
-     <a  class="li1news"> شرق أوسط </a>
+     <a onclick="Arrows(2);" href="#"  class="li1news"> عالم </a>
+     <img class="listArrow" src="./img/Arrow.png" alt="">
+
   <li>
        <ul class="list1ul">
       <li href="" class="Alist"> آخر الأخبار </li>
-      <li href="" class="Alist"> من مصر </li>
+      <li href="" class="Alist"> الولايات المتحدة  </li>
+      <li href="" class="Alist"> مستجدات كورنا  </li>
       </ul>
   </li>
- 
-
-  
 </ul>
+
+
+
+
+
+<ul class="listALL1">
+  <li class="list1">
+     <a href="#" onclick="Arrows(3);" class="li1news"> مزيد </a>
+     <img class="listArrow" src="./img/Arrow.png" alt="">
+
+  <li>
+       <ul class="list1ul">
+      <li href="" class="Alist"> رياضة </li>
+      <li href="" class="Alist"> علوم  </li>
+      <li href="" class="Alist"> منوعات </li>
+      <li href="" class="Alist"> فيديو </li>
+      <li href="" class="Alist"> برامجنا </li>
+      <li href="" class="Alist">  حديث الصور  </li>
+      <li href="" class="Alist"> إنفوغرافيك </li>
+      <li href="" class="Alist"> مقالات رأي  </li>
+      <li href="" class="Alist"> ملفات </li>
+
+      </ul>
+  </li>
+</ul>
+
+
 
 
 
