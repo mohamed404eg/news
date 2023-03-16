@@ -1321,13 +1321,15 @@ html {
 
   /* nav list mobile s */
 .NavMobile{
-  position: sticky;
+  position: fixed;
   height: 100vh;
   width: 100%;
   background-color:#fff;
   z-index: 2;
   top: 0;
+	overflow-y: scroll;
 }
+
 .NavMobileLogo{
   width: 100%;
   height: 51px;
@@ -1582,13 +1584,11 @@ justify-content: center;
 
 /* list */
 .NavMobileListAll {
-  width: 100%;
   margin-right: 20px;
   margin-top: 20px;
   display: flex;
   flex-direction: column;
-  flex-wrap: nowrap;
-}
+  flex-wrap: nowrap;}
 
 .homeA {
   color: #AC0000 ;
