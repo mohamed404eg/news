@@ -1215,6 +1215,9 @@ html {
 }
 /* by e*/
 
+
+
+
 /* Small 320 s */
 @media screen and (max-width: 500px) {
   .container {
@@ -1319,11 +1322,29 @@ html {
 
 
 
+/* nav list mobile s */
+
+.navMoblie{
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  background-color: #F5F8F8;
+  z-index: 1;
+}
 
 
-  .listFlex {
-    display: none;
-  }
+
+
+
+.listFlex {
+display: none;
+
+}
+
+
+/* nav list mobile e */
+
+
   .searchDIV {
     display: none;
   }
