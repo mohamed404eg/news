@@ -6,7 +6,9 @@
 
 }
 
-
+a{
+  text-decoration: none;
+}
 input::-webkit-search-cancel-button {
     display: none;
 }
@@ -1318,9 +1320,8 @@ html {
 
 
   /* nav list mobile s */
-
 .NavMobile{
-  position: fixed;
+  position: sticky;
   height: 100vh;
   width: 100%;
   background-color:#fff;
@@ -1359,7 +1360,17 @@ html {
   padding-right: 10px;
   padding-left: 10px;
 }
-
+.NavMobileLogin img {
+  width: 20px;
+    height: 20px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.NavMobileLogin p {
+  padding-right: 3px;
+  font-size: 13px;
+  font-weight: 700;
+}
 
 .all{
   width: 100%;
@@ -1396,6 +1407,255 @@ background-color: #fff;
   margin-top: auto;
   margin-bottom: auto;
 }
+
+.NavMobileWeather {
+  height: 40px;
+  margin: 30px 10px 10px 10px;
+  background-color: #211e1f;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-right: 10px;
+  padding-left: 5px;
+  border-radius: 3px;
+}
+
+.NavMobileWeatherCairo {
+  font-weight: 700;
+}
+
+.dataNavMobileWeather{
+  font-weight: 700;
+}
+.weatherIconNavMobile{
+  height: 20px;
+  width: 20px;
+}
+.data-Icon {
+  display: flex;
+  align-items: center;
+}
+
+.socialNacMobile {
+  margin-right: 10px;
+  margin-left: 10px;
+  margin-top: 30px;
+}
+.socialNacMobileONE {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 39px;
+}
+
+.NavMobileA1Div{
+  width: 47%;
+  height: 39px;
+  background-color: #AC0000;
+  min-width: 40%;
+border-right: 4px solid #cb0000;
+}
+
+.NavMobileA1 {
+height: 100%;
+color: #fff;
+display: flex;
+flex-direction: row;
+flex-wrap: nowrap;
+align-items: center;
+justify-content: center;
+}
+.NavMobileA1 span:nth-child(1) {
+  padding-top: 8px;
+  padding-left: 3px;
+
+}
+
+.NavMobileA1 span:nth-child(1) img{
+ height: 20px;
+ width: 20px;
+}
+.NavMobileA1 span:nth-child(2) {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+
+
+.NavMobileA2Div{
+  height: 39px;
+  min-width: 40%;
+  width: 47%;
+  background-color:#032c67 ;
+  border-right:solid #063E7B 4px ;
+}
+
+.NavMobileA2 {
+  width: 100%;
+  height: 39px;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.NavMobileA2 span:nth-child(1){
+  font-size: 14px;
+  font-weight: 600;
+  color: #fff;
+}
+.NavMobileA2 span:nth-child(2){
+  padding-right: 3px;
+}
+.NavMobileA2 span:nth-child(2) img{
+height: 20px;
+width: 20px;
+display: flex;
+}
+
+
+
+
+.socialNacMobileTWO{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 39px;
+  margin-top: 30px;
+}
+.NavMobileA1DivTWO{
+  height: 39px;
+  min-width: 40%;
+  width: 47%;
+  background-color: #232323;
+  border-right: solid 4px #F8EB20;
+}
+.NavMobileA1TWO{
+  display: flex;
+align-items: center;
+height: 39px;
+justify-content: center;
+}
+.NavMobileA1TWO  span{
+  color: #F8EB20;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.NavMobileA2DivTWO{
+  height: 39px;
+  min-width: 40%;
+  width: 47%;
+  border-right: 4px  solid #2f71c1;
+
+}
+
+
+
+
+.NavMobileA2DivTWO{
+  height: 39px;
+  min-width: 40%;
+  width: 47%;
+  background-color: #2f71c1;
+  clip-path: polygon(0 0, 100% 0, 100% 70%, 93% 100%, 0 100%);
+
+}
+
+.NavMobileA2TWO {
+  width: 100%;
+  height: 39px;
+  display: block;
+}
+.NavMobileA2TWO span {
+  margin-top: auto;
+  margin-bottom: auto;
+  height: 39px;
+  display: block;
+}
+.NavMobileA2TWO span img{
+  width: 100%;
+  height: 30%;
+  padding-top: 14px;
+}
+
+
+
+/* list */
+.NavMobileListAll {
+  width: 100%;
+  margin-right: 20px;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+
+.homeA {
+  color: #AC0000 ;
+  border-bottom: 1px solid #e8e8e8;
+}
+
+/* this use all ul in js */
+.list1ul {
+  display: none;
+  transition: 800ms ease ;
+  transform-origin: bottom;
+}
+.list1ulblock{
+  display: block;
+  transition: 800ms ease ;
+  transform-origin: bottom;
+}
+
+/* this use all ul in js */
+
+
+.NavMobileListAll li{
+  list-style: none;
+}
+
+.listALL1 {
+  padding: 14px 20px;
+  border-top: 1px solid #e8e8e8;
+}
+
+.li1news {
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+
+.Alist {
+  padding-top: 10px;
+  border-bottom: 1px solid #e4e4e4;
+  text-decoration: none;
+  color: #000000;
+  padding-right: 10px;
+  background-color: #fff;
+}
+.Alist:hover {
+  border-bottom: solid 5px #be2f21;
+}
+
+
+
+
+
+
+
+
+
+/* list */
+
+
+
+
+
+
+
+
+
 
 
 

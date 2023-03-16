@@ -87,7 +87,7 @@ data.append(d);
 
 // months arabs
 
-// weather
+// weather s
 let apiWether = new XMLHttpRequest();
 apiWether.open(
   "GET",
@@ -109,8 +109,19 @@ apiWether.onreadystatechange = function () {
     // weatherIcon
     let weatherIcon = document.querySelector(".weatherIcon");
     weatherIcon.setAttribute("src", `${jsapiWether.current.condition.icon}`);
+
+    // Nav Mobile Weather
+    let dataNavMobileWeather = document.querySelector(".dataNavMobileWeather");
+    let weatherIconNavMobile = document.querySelector(".weatherIconNavMobile");
+    dataNavMobileWeather.append(weatherC);
+    weatherIconNavMobile.setAttribute(
+      "src",
+      `${jsapiWether.current.condition.icon}`
+    );
   }
 };
+
+// weather e
 
 // data nav bar top
 
@@ -297,14 +308,12 @@ function setdateBusiness() {
         divpostTop.className = "BusinessPost";
       }
       // add to BusinessPost end
-    }).catch(() => console.log(console.error("is error")));
+    })
+    .catch(() => console.log(console.error("is error")));
 }
 
 setdateBusiness();
 //  BUSINESS WINDOW e
-
-
-
 
 //  itm1POST s
 function itm1POST() {
@@ -411,7 +420,6 @@ function itm2POST() {
 itm2POST();
 
 //  itm2POST e
-
 
 //  itm3POST s
 function itm3POST() {
@@ -574,3 +582,14 @@ function newIMG() {
 newIMG();
 
 //  newIMG e
+
+// list nav moblie s
+
+let list1ul = document.querySelectorAll(".list1ul");
+let list1 = document.querySelectorAll(".list1");
+
+for (let i = 0; i < list1.length; i++){
+list1[i].addEventListener("click", () => {
+  list1ul[i].classList.toggle("list1ulblock")
+})}
+// list nav moblie e
