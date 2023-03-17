@@ -441,8 +441,8 @@ html {
 
 .videoSpan {
   position: absolute;
-  top: 8px;
-  margin-right: 4px;
+  top: 1px;
+  margin-right: -1px;
 }
 
 /* radio */
@@ -471,7 +471,7 @@ html {
 
 .radioSpan {
   position: absolute;
-  top: 8px;
+  top: 0;
   margin-right: 4px;
 }
 /* header */
@@ -1234,15 +1234,19 @@ display: none;
 
 
 @media (max-width: 1200px) {
-  .container {
-    width: 970px;
-  }
-  .footerList {
-    grid-template-areas:
-    "footerList1 footerList2 footerList3 footerList4"
-    "footerList5";
 
-  }
+
+
+  .footerList {
+    display: grid;
+    grid-template-areas: "footerList1 footerList2 footerList3 footerList4 footerList5 footerList5 footerList5";
+    grid-column-gap: 9px;
+    font-size: 15px;
+   
+}
+
+
+
   .email-S {
     background-color: #e9eff0;
     height: 250px;
@@ -1252,13 +1256,26 @@ display: none;
 .container {
   width: 700px;
 }
+.footerListContainer{
+   width:90%;
+}
+
 .listLeft {
   display: none;
 }
 #multipleCategory {
   display: grid;
-  grid-template-areas: "MiddleEast" "world " "sport " "OpinionArticles" " sport ";
+  grid-template-areas:
+      "MiddleEast "
+      "world"
+      "sport"
+      "OpinionArticles";
+      
+  margin-top: 20px;
+  background-image: radial-gradient( circle, #f5f8f8, #f8fafa, #fafbfc, #fdfdfe, #ffffff );
+  column-gap: 20px;
 }
+
 
 }
 
@@ -1743,8 +1760,32 @@ justify-content: center;
 
 /* list */
 
+#multipleCategory {
+  display: grid;
+  grid-template-areas:
+      "MiddleEast world sport OpinionArticles"
+      "MiddleEast world sport OpinionArticles"
+      "MiddleEast world sport OpinionArticles"
+      "MiddleEast world sport OpinionArticles"
+      "MiddleEast world sport OpinionArticles";
+  margin-top: 20px;
+  background-image: radial-gradient( circle, #f5f8f8, #f8fafa, #fafbfc, #fdfdfe, #ffffff );
+  column-gap: 20px;
+}
 
 
+#multipleCategory {
+  display: grid;
+  grid-template-areas:
+      "MiddleEast "
+      "world"
+      "sport"
+      "OpinionArticles";
+
+  margin-top: 20px;
+  background-image: radial-gradient( circle, #f5f8f8, #f8fafa, #fafbfc, #fdfdfe, #ffffff );
+  column-gap: 20px;
+}
 
 
 

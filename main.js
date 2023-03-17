@@ -131,10 +131,25 @@ apiWether.onreadystatechange = function () {
 let list7 = document.querySelector(".list:nth-child(7)");
 
 list7.addEventListener("mousemove", () => {
+  let Alist = document.querySelectorAll(".Alist");
+  for (let i = 0; i < Alist.length; i++) {
+    Alist[i].style.display = "block";
+  }
+  let Alist2 = document.querySelectorAll(".Alist2");
+  for (let i = 0; i < Alist2.length; i++) {
+    Alist2[i].style.display = "block";
+  }
+  let Alist3 = document.querySelectorAll(".Alist3");
+  for (let i = 0; i < Alist3.length; i++) {
+    Alist3[i].style.display = "block";
+  }
+
   let Alist4 = document.querySelectorAll(".Alist4");
   for (let i = 0; i < Alist4.length; i++) {
     Alist4[i].style.display = "block";
   }
+
+
 });
 
 let sectoin1 = document.querySelector("#sectoin1");
@@ -142,11 +157,31 @@ let sectoin1 = document.querySelector("#sectoin1");
 // console.log(sectoin1);
 
 sectoin1.addEventListener("mousemove", () => {
+  let Alist = document.querySelectorAll(".Alist");
+  for (let i = 0; i < Alist.length; i++) {
+    Alist[i].style.display = "none";
+  }
+    let Alist2 = document.querySelectorAll(".Alist2");
+    for (let i = 0; i < Alist2.length; i++) {
+      Alist2[i].style.display = "none";
+    }
+    let Alist3 = document.querySelectorAll(".Alist3");
+    for (let i = 0; i < Alist3.length; i++) {
+      Alist3[i].style.display = "none";
+    }
+    
   let Alist4 = document.querySelectorAll(".Alist4");
   for (let i = 0; i < Alist4.length; i++) {
     Alist4[i].style.display = "none";
-  }
-}); /* sab Menu 4 */
+    }
+  
+  
+});
+
+/* sab Menu 4 */
+
+
+
 
 // sectoin-lastNews
 let lastNews = new XMLHttpRequest();
@@ -165,7 +200,7 @@ lastNews.onreadystatechange = function () {
     // console.log(JSlastNews)
 
     let sectoin_lastNews = document.querySelector(".lastNews");
-    for (let i = 0; i < 6; i++) {
+    for (let i = 0; i < 4; i++) {
       // creat
       let divpostTop = document.createElement("div");
       let h3 = document.createElement("h3");
