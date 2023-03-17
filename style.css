@@ -1205,6 +1205,19 @@ html {
 
 /* footer e */
 
+/* nav mobile display none */
+.NavMobile {
+display: none;
+}
+.social {
+display: none;
+}
+.ic_menu_black {
+display: none;
+}
+
+
+
 /* by  s*/
 .by {
   text-align: center;
@@ -1216,8 +1229,46 @@ html {
 }
 /* by e*/
 
+
+
+
+
+@media (max-width: 1200px) {
+  .container {
+    width: 970px;
+  }
+  .footerList {
+    grid-template-areas:
+    "footerList1 footerList2 footerList3 footerList4"
+    "footerList5";
+
+  }
+  .email-S {
+    background-color: #e9eff0;
+    height: 250px;
+    width: auto;
+    padding: 16px;
+}
+.container {
+  width: 700px;
+}
+.listLeft {
+  display: none;
+}
+#multipleCategory {
+  display: grid;
+  grid-template-areas: "MiddleEast" "world " "sport " "OpinionArticles" " sport ";
+}
+
+}
+
+
+
+
+
+
 /* Small 320 s */
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 768px) {
   .container {
     padding-right: 0;
     padding-left: 0;
@@ -1320,6 +1371,13 @@ html {
 
 
   /* nav list mobile s */
+  .NavMobile {
+    display:block;
+    }
+    
+    .ic_menu_black {
+      display: inline;
+      }
 .NavMobile{
   position: fixed;
   height: 100vh;
@@ -1927,6 +1985,10 @@ justify-content: center;
 }
 
 /* Small 320 e */
+
+
+
+
 
 /* Small */
 /* @media (min-width: 768px) {

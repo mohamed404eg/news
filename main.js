@@ -103,9 +103,11 @@ apiWether.onreadystatechange = function () {
     let weatherC = document.createTextNode(
       `${jsapiWether.current.feelslike_c}c`
     );
+    let weatherC2 = document.createTextNode(
+      `${jsapiWether.current.feelslike_c}c`
+    );
     let weather = document.querySelector(".weather");
-    weather.append(weatherC);
-
+    weather.appendChild(weatherC2);
     // weatherIcon
     let weatherIcon = document.querySelector(".weatherIcon");
     weatherIcon.setAttribute("src", `${jsapiWether.current.condition.icon}`);
@@ -583,8 +585,6 @@ newIMG();
 
 //  newIMG e
 
-
-
 // list nav moblie s
 
 let list1ul = document.querySelectorAll(".list1ul");
@@ -592,27 +592,21 @@ let list1 = document.querySelectorAll(".list1");
 for (let i = 0; i < list1.length; i++) {
   list1[i].addEventListener("click", () => {
     list1ul[i].classList.toggle("list1ulblock");
-  })
-};
-
-
-
+  });
+}
 
 // Arrows Nav Mobile
 
-  function Arrows(t) {
-    let Arrow = document.querySelectorAll(".listArrow");
+function Arrows(t) {
+  let Arrow = document.querySelectorAll(".listArrow");
 
-    Arrow[t].classList.toggle("listArrowTOP");
-  }
+  Arrow[t].classList.toggle("listArrowTOP");
+}
 
+// clos nav and open
+let ic_menu_black = document.querySelector(".ic_menu_black");
+let NavMobile = document.querySelector(".NavMobile");
 
-  // clos nav and open
-let ic_menu_black = document.querySelector(".ic_menu_black")
-let NavMobile = document.querySelector(".NavMobile")
-
- function menu_close_Open() {
+function menu_close_Open() {
   NavMobile.classList.toggle("NavMobileOPEN");
- 
-
 }
